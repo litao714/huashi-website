@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
 
 export default function Contact() {
   const { t, i18n } = useTranslation();
@@ -31,11 +30,7 @@ export default function Contact() {
 
   return (
     <>
-      <Helmet>
-        <title>{i18n.language === 'zh' ? '联系我们 - 杭州华世数科科技有限公司' : 'Contact Us - Hangzhou Huashi Digital Technology Co., Ltd.'}</title>
-        <meta name="description" content={i18n.language === 'zh' ? '欢迎联系杭州华世数科，获取企业AI化解决方案、合作与咨询服务。' : 'Contact Huashi Digital for enterprise AI solutions, cooperation, and consulting services.'} />
-      </Helmet>
-      <section>
+           <section>
         <h2>{t('contact')}</h2>
         {i18n.language === 'zh' ? (
           <>

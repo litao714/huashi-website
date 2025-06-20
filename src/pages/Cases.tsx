@@ -1,15 +1,10 @@
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 
 export default function Cases() {
   const { t, i18n } = useTranslation();
   return (
     <>
-      <Helmet>
-        <title>{i18n.language === 'zh' ? '案例展示 - 杭州华世数科科技有限公司' : 'Case Studies - Hangzhou Huashi Digital Technology Co., Ltd.'}</title>
-        <meta name="description" content={i18n.language === 'zh' ? '企业AI赋能、团队裂变、商业模式创新等真实案例展示。' : 'Case studies: AI empowerment, team expansion, business model innovation.'} />
-      </Helmet>
-      <section>
+            <section>
         <h2>{t('cases')}</h2>
         {i18n.language === 'zh' ? (
           <ul>

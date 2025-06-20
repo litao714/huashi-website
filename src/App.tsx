@@ -8,7 +8,7 @@ import News from './pages/News';
 import Contact from './pages/Contact';
 import './App.css';
 import logo from './assets/logo.png';
-import { HelmetProvider } from 'react-helmet-async';
+
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -20,7 +20,6 @@ function App() {
   };
 
   return (
-    <HelmetProvider>
       <Router>
         <div className="container">
           <header>
@@ -53,7 +52,6 @@ function App() {
           </main>
         </div>
       </Router>
-    </HelmetProvider>
   );
 }
 

@@ -1,14 +1,10 @@
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 
 export default function About() {
   const { t, i18n } = useTranslation();
   return (
     <>
-      <Helmet>
-        <title>{i18n.language === 'zh' ? '关于我们 - 杭州华世数科科技有限公司' : 'About Us - Hangzhou Huashi Digital Technology Co., Ltd.'}</title>
-        <meta name="description" content={i18n.language === 'zh' ? '杭州华世数科，企业AI化解决方案专家，助力企业数字化转型。' : 'Huashi Digital, expert in enterprise AI transformation solutions, empowering digital transformation.'} />
-      </Helmet>
+
       <section>
         <h2>{t('about')}</h2>
         {i18n.language === 'zh' ? (
