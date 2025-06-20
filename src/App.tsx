@@ -21,6 +21,11 @@ function App() {
 
   return (
     <div className="main-bg">
+      {/* 右上角中英文切换按钮 */}
+      <div className="lang-switch-bar">
+        <button onClick={() => changeLanguage('zh')} disabled={lang === 'zh'}>中文</button>
+        <button onClick={() => changeLanguage('en')} disabled={lang === 'en'}>English</button>
+      </div>
       {/* 顶部导航栏 */}
       <header className="nav-bar">
         <div className="nav-left">
@@ -36,10 +41,6 @@ function App() {
           <button className="nav-login">{lang === 'zh' ? '登录' : 'Login'}</button>
         </nav>
       </header>
-      <div className="lang-switch-bar">
-        <button onClick={() => changeLanguage('zh')} disabled={lang === 'zh'}>中文</button>
-        <button onClick={() => changeLanguage('en')} disabled={lang === 'en'}>English</button>
-      </div>
       {/* 主内容区 */}
       <main className="main-content">
         <div className="main-titles">
