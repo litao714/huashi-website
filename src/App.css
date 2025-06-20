@@ -51,20 +51,39 @@ body {
   background: linear-gradient(135deg, #181c2f 0%, #232946 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 32px 16px;
-  font-family: 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Arial', sans-serif;
-  background: rgba(255,255,255,0.04);
+  max-width: 600px;
+  margin: auto;
+  padding: 40px 32px 32px 32px;
+  font-family: 'Segoe UI', 'PingFang SC', 'Arial', sans-serif;
+  background: rgba(30, 34, 54, 0.95);
   border-radius: 18px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-  margin-top: 48px;
+  color: #fff;
+  text-align: center;
 }
 header {
   text-align: center;
   margin-bottom: 32px;
+}
+header .logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+header .logo-row img {
+  height: 48px;
+}
+header .logo-row span {
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
 }
 .lang-switch {
   margin-bottom: 16px;
@@ -73,8 +92,8 @@ header {
   margin: 0 4px;
   padding: 6px 16px;
   border: 1px solid #0078d7;
-  background: #fff;
-  color: #0078d7;
+  background: #232946;
+  color: #fff;
   border-radius: 4px;
   cursor: pointer;
   font-size: 15px;
@@ -89,7 +108,7 @@ nav {
   margin: 24px 0 0 0;
 }
 nav a {
-  color: #0078d7;
+  color: #7ecbff;
   text-decoration: none;
   margin: 0 10px;
   font-size: 18px;
@@ -97,7 +116,7 @@ nav a {
   transition: color 0.2s;
 }
 nav a:hover {
-  color: #005fa3;
+  color: #fff;
 }
 h1 {
   font-size: 2.2rem;
@@ -106,4 +125,29 @@ h1 {
 }
 main {
   margin-top: 32px;
+}
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #0078d7;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #232946;
+  color: #fff;
+  box-sizing: border-box;
+}
+button[type='submit'] {
+  padding: 8px 32px;
+  border: none;
+  border-radius: 6px;
+  background: #0078d7;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.2s;
+}
+button[type='submit']:hover {
+  background: #005fa3;
 }
