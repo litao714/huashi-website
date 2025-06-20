@@ -42,7 +42,7 @@
 }
 
 body, html, #root {
-  height: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -57,9 +57,9 @@ body {
 }
 .container {
   width: 100vw;
-  height: 100vh;
   min-height: 100vh;
-  min-width: 100vw;
+  max-width: 900px;
+  margin: 0 auto;
   box-sizing: border-box;
   padding: 48px 5vw 32px 5vw;
   font-family: 'Segoe UI', 'PingFang SC', 'Arial', sans-serif;
@@ -72,6 +72,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 320px;
 }
 header {
   text-align: center;
