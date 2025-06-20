@@ -60,12 +60,12 @@ body {
 .container {
   width: 100vw;
   min-height: 100vh;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 48px 5vw 32px 5vw;
   font-family: 'Segoe UI', 'PingFang SC', 'Arial', sans-serif;
-  background: rgba(30, 34, 54, 0.95);
+  background: rgba(30, 34, 54, 0.7);
   border-radius: 0;
   box-shadow: none;
   color: #fff;
@@ -129,9 +129,9 @@ nav a:hover {
   color: #fff;
 }
 h1 {
-  font-size: 2.2rem;
-  margin: 0 0 12px 0;
-  font-weight: 700;
+  font-size: 3rem;
+  margin: 0 0 18px 0;
+  font-weight: 800;
 }
 main {
   margin-top: 32px;
