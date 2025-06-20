@@ -229,7 +229,8 @@ button[type='submit']:hover {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 0 0 0 18px;
+  margin: 18px auto 0 auto;
+  justify-content: center;
 }
 .lang-switch-bar button {
   margin: 0;
