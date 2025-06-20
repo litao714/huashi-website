@@ -33,14 +33,13 @@ function App() {
           <a href="#price">{lang === 'zh' ? '价格' : 'Price'}</a>
           <a href="#contact">{lang === 'zh' ? '联系我们' : 'Contact'}</a>
           <a href="#about">{lang === 'zh' ? '关于我们' : 'About Us'}</a>
+          <div className="lang-switch-bar">
+            <button onClick={() => changeLanguage('zh')} disabled={lang === 'zh'}>中文</button>
+            <button onClick={() => changeLanguage('en')} disabled={lang === 'en'}>English</button>
+          </div>
           <button className="nav-login">{lang === 'zh' ? '登录' : 'Login'}</button>
         </nav>
       </header>
-      {/* 语言切换 */}
-      <div className="lang-switch-bar">
-        <button onClick={() => changeLanguage('zh')} disabled={lang === 'zh'}>中文</button>
-        <button onClick={() => changeLanguage('en')} disabled={lang === 'en'}>English</button>
-      </div>
       {/* 主内容区 */}
       <main className="main-content">
         <div className="main-titles">
