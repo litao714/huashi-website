@@ -11,7 +11,7 @@ const cases = [
 ];
 
 function App() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const [lang, setLang] = useState(i18n.language || 'zh');
 
   const changeLanguage = (lng: string) => {
